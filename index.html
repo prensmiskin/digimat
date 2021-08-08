@@ -28,7 +28,12 @@
 
   <!-- Main Stylesheet File -->
   <link href="css/style.css" rel="stylesheet">
-
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+.mySlides {display:none}
+.w3-left, .w3-right, .w3-badge {cursor:pointer;margin-bottom: 3%}
+.w3-badge {height:13px;width:13px;padding:0}
+</style>
   
 </head>
 
@@ -93,18 +98,87 @@
   <!--==========================
     Intro Section
   ============================-->
+<style type="text/css">
+  
+
+@media (min-width:500px) { 
+#anadiv {         
 
 
-  <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img class="d-block w-100" src="a3.jpg" alt="First slide">
-    </div>
-    <div class="carousel-item">
-      <img class="d-block w-100" src="home2.png" alt="Second slide">
-    </div>
+padding-left: 15%;padding-right: 15%;
+
+
+}
+ }
+
+
+</style>
+<div id="anadiv">
+
+ <div class="w3-container">
+  
+</div>
+
+<div class="w3-content w3-display-container" style="max-width:800px">
+  <img class="mySlides" src="a3.jpg" style="width:100%">
+  <img class="mySlides" src="home2.png" style="width:100%">
+  <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
+    <div class="w3-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
+    <div class="w3-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
+    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
+    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
   </div>
 </div>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" w3-white", "");
+  }
+  x[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " w3-white";
+}
+
+
+var slideIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > x.length) {slideIndex = 1}
+  x[slideIndex-1].style.display = "block";
+  setTimeout(carousel, 7000); // Change image every 2 seconds
+}
+
+</script>
+
+
+
+
 <!--  <section id="intro">
 
     <div class="intro-content">
@@ -124,27 +198,12 @@
     </div>
 
   </section> #intro -->
-<style type="text/css">
-  
 
-@media (min-width:500px) { 
-#anadiv {         
-
-
-padding-left: 25%;padding-right: 25%;
-
-
-}
- }
-
-
-</style>
-<div id="anadiv">
   <main id="main">
  <section id="team" class="wow fadeInUp">
           <div style="margin-left: 5%;" class="section-header">
 
-   <h2  >Departmanlar</h2>
+   <h2 style="font-size: 18px;" >Çözümler</h2>
         </div>
 
       <div class="container">
@@ -154,7 +213,7 @@ padding-left: 25%;padding-right: 25%;
                                      
 
           <div class="col-lg-6 col-md-6">
-             <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal6">
+             <a class="portfolio-link" data-bs-toggle="modal" href="ip.html">
             <div class="member">
               <div class="pic"><img src="dig9.jpg" alt=""></div>
                <div class="details" style="background-color: #fff;color:#000;">
@@ -166,7 +225,7 @@ padding-left: 25%;padding-right: 25%;
 
           </div>
          <div class="col-lg-6 col-md-6">
-                       <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal6">
+                       <a class="portfolio-link" data-bs-toggle="modal" href="sıramatık.html">
 
             <div class="member">
               <div class="pic"><img src="dig6.jpg" alt=""></div>
@@ -180,7 +239,7 @@ padding-left: 25%;padding-right: 25%;
           </div>
 
           <div class="col-lg-6 col-md-6">
-                         <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal6">
+                         <a class="portfolio-link" data-bs-toggle="modal" href="kablosuz.html">
 
             <div class="member">
               <div class="pic"><img src="dig7.jpg" alt=""></div>
@@ -194,7 +253,7 @@ padding-left: 25%;padding-right: 25%;
           </div>
 
           <div class="col-lg-6 col-md-6">
-                         <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal6">
+                         <a class="portfolio-link" data-bs-toggle="modal" href="saat.html">
 
             <div class="member">
               <div class="pic"><img src="dig3.jpg" alt=""></div>
@@ -253,102 +312,7 @@ padding-left: 25%;padding-right: 25%;
 
 
 
-    <section class="page-section bg-light" id="portfolio">
-            <div class="container">
-                <div class="text-center">
-                    <h2 class="section-heading text-uppercase">Embedded Systems Lab</h2>
-                    <h3 class="section-subheading text-muted">Development</h3>
-                </div>
-                <div class="row">
-                    <div class="col-lg-4 col-sm-6 mb-4">
-                        <!-- Portfolio item 1-->
-                        <div class="portfolio-item">
-                                <div class="portfolio-hover">
-                                    <div class="portfolio-hover-content">
-</div>
-                                </div>
-                                <img class="img-fluid" src="arge8.jpg" alt="..." />
-                            <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading"></div>
-                                <div class="portfolio-caption-subheading text-muted"></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-sm-6 mb-4">
-                        <!-- Portfolio item 2-->
-                        <div class="portfolio-item">
-                                <div class="portfolio-hover">
-                                    <div class="portfolio-hover-content">
-</div>
-                                </div>
-                                <img class="img-fluid" src="arge9.jpg" alt="..." />
-                            <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading"></div>
-                                <div class="portfolio-caption-subheading text-muted"> </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-sm-6 mb-4">
-                        <!-- Portfolio item 3-->
-                        <div class="portfolio-item">
-                                <div class="portfolio-hover">
-                                    <div class="portfolio-hover-content">
-</div>
-                                </div>
-                                <img class="img-fluid" src="arge6.jpg" alt="..." />
-                            <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading"></div>
-                                <div class="portfolio-caption-subheading text-muted"></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-sm-6 mb-4 mb-lg-0">
-                        <!-- Portfolio item 4-->
-                        <div class="portfolio-item">
-                                <div class="portfolio-hover">
-                                    <div class="portfolio-hover-content">
-</div>
-                                </div>
-                                <img class="img-fluid" src="arge5.jpg" alt="..." />
-                            <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading"></div>
-                                <div class="portfolio-caption-subheading text-muted"></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-sm-6 mb-4 mb-sm-0">
-                        <!-- Portfolio item 5-->
-                        <div class="portfolio-item">
-                                <div class="portfolio-hover">
-                                    <div class="portfolio-hover-content">
-</div>
-                                </div>
-                                <img class="img-fluid" src="arge4.jpg" alt="..." />
-                            <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading"></div>
-                                <div class="portfolio-caption-subheading text-muted"> </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-sm-6">
-                        <!-- Portfolio item 6-->
-                        <div class="portfolio-item">
-                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal6">
-                                <div class="portfolio-hover">
-                                    <div class="portfolio-hover-content">
-</div>
-                                </div>
-                                <img class="img-fluid" src="arge2.jpg" alt="..." />
-                            </a>
-                            <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading"></div>
-                                <div class="portfolio-caption-subheading text-muted"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+
 
     <!--==========================
       Services Section
@@ -366,7 +330,7 @@ padding-left: 25%;padding-right: 25%;
     <section id="clients" class="wow fadeInUp">
       <div class="container">
         <div class="section-header">
-          <h2>Müşteriler</h2>
+          <h2 style="font-size: 18px;">Müşteriler</h2>
           <p>18'i Avrupa ülkesi olmak üzere toplam 51 ülkeye ihracat yapmaktayız.Başta ülkemiz olmak üzere dünyadaki bir çok kurum ve kuruluşlara hizmet vermekteyiz.</p>
         </div>
 
@@ -398,7 +362,7 @@ padding-left: 25%;padding-right: 25%;
     <section id="testimonials" class="wow fadeInUp">
       <div class="container">
         <div class="section-header">
-          <h2>Müşteri Yorumları</h2>
+          <h2 style="font-size: 18px;">Müşteri Yorumları</h2>
          
         </div>
         <div class="owl-carousel testimonials-carousel">
@@ -451,7 +415,7 @@ padding-left: 25%;padding-right: 25%;
             <p class="cta-text"> Tüm Sorularınız için Satış Departmanımızla iletişime geçin.</p>
           </div>
           <div class="col-lg-3 cta-btn-container text-center">
-            <a class="cta-btn align-middle" href="#">İletişime Geç</a>
+            <a class="cta-btn align-middle" href="https://api.whatsapp.com/send?phone=+905076006092&text=Merhaba%20Ürünler Hakkında%20Bilgi Alabilirmiyim ?%20Teşekkürler%20." target="_blank">İletişime Geç</a>
           </div>
         </div>
 
@@ -464,7 +428,7 @@ padding-left: 25%;padding-right: 25%;
     <section id="team" class="wow fadeInUp">
       <div class="container">
         <div class="section-header">
-          <h2>Takım</h2>
+          <h2 style="font-size: 18px;">Takım</h2>
         </div>
         <div class="row">
           <div class="col-lg-3 col-md-6">
@@ -487,7 +451,7 @@ padding-left: 25%;padding-right: 25%;
             <div class="member">
               <div class="pic"><img src="per2.jpg" alt=""></div>
               <div class="details">
-                <h4>Kadir<br> Türk</h4>
+                <h4>Kadir Türk</h4>
                 <span>CIO </span>
                 <div class="social">
                   <a href=""><i class="fa fa-twitter"></i></a>
@@ -519,7 +483,7 @@ padding-left: 25%;padding-right: 25%;
             <div class="member">
               <div class="pic"><img src="per4.jpg" alt=""></div>
               <div class="details">
-                <h4>Meltem Eroğlu</h4>
+                <h4>Meltem E.</h4>
                 <span>CFO </span>
                 <div class="social">
                   <a href=""><i class="fa fa-twitter"></i></a>
@@ -600,23 +564,23 @@ padding-left: 25%;padding-right: 25%;
           <form action="" method="post" role="form" class="contactForm">
             <div class="form-row">
               <div class="form-group col-md-6">
-                <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                <input type="text" name="name" class="form-control" id="name" placeholder="Ad" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
                 <div class="validation"></div>
               </div>
               <div class="form-group col-md-6">
-                <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
+                <input type="email" class="form-control" name="email" id="email" placeholder="Email" data-rule="email" data-msg="Please enter a valid email" />
                 <div class="validation"></div>
               </div>
             </div>
             <div class="form-group">
-              <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+              <input type="text" class="form-control" name="subject" id="subject" placeholder="Konu" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
               <div class="validation"></div>
             </div>
             <div class="form-group">
-              <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
+              <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Mesaj"></textarea>
               <div class="validation"></div>
             </div>
-            <div class="text-center"><button type="submit">Send Message</button></div>
+            <div class="text-center"><button type="submit">Gönder</button></div>
           </form>
         </div>
 
