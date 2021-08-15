@@ -73,5 +73,164 @@
 
 	</div>
 </div>
+<style type="text/css">
+	
+
+body{
+	font-family: sans-serif;
+	margin: 0;
+	padding: 0;
+	line-height: 1.5;
+	font-weight: 400;
+	color: white;
+	background-color: #4c4177;
+	background-image: linear-gradient(315deg,#4c4177 0%,#2a5470 74%);
+
+}
+.container{
+
+	padding: 2rem;
+	padding-bottom: 400px;
+	margin: 0 auto;
+	max-width: 800px;
+}
+.top-section{
+	text-align:center;
+	padding: 4rem 0;
+	max-width: 600px;
+	margin: 0 auto;
+}
+.timeline{
+	position: relative;
+	min-height: 150px;
+
+}
+.line{
+	position: absolute;
+	z-index: 2;
+	left: calc(50% -1px);
+	width: 2px;
+	top: -50px;
+	bottom: -50px;
+	background-color: #000;
+}
+.line:before,
+.line:after{
+	position: absolute;
+    display: block;
+    content: '';
+    height: 1rem;
+    width: 1rem;
+    border-radius: 50%;
+    background-color: #000;
+    left: 50%;
+transform: translateX(-50%);
+
+}
+.line:after{
+	bottom: 0;
+	display: none;
+
+}
+.section{
+	display: flex;
+	opacity: 0;
+	transform: translateX(-100%);
+	transform: 600ms ease;
+	position: relative;
+	z-index: 1;
+	margin: 50px 0;
+	padding:1rem;
+	border-radius:1rem;
+	align-items: center;
+width: 50%;
+}
+.section:nth-child(odd){
+	flex-direction:row-reverse;
+	transform: translateX(100%);
+
+}
+.bead{
+
+	position: absolute;
+	display: block;
+	height: 1rem;
+	border-radius: 50%;
+	background-color: #000;
+	left: 50%;
+	top: 20%;
+	transform: translateX(-50%);
+
+}
+
+.cotent{
+	width: calc(50%-2rem);
+}
+.show-me:nth-child(n){
+	transform: none;
+	opacity: 1;
+}
+h1{
+	font-weight: 400;
+	letter-spacing: 1px;
+
+}
+</style>
+<script type="text/javascript">
+	 
+     "use strict";
+
+function qs(selector, all = false) {
+  return all ? document.querySelectorAll(selector) : document.querySelector(selector);
+}
+
+const sections = qs('.section', true);
+const timeline = qs('.timeline');
+const line = qs('.line');
+line.style.bottom = `calc(100% - 20px)`;
+let prevScrollY = window.scrollY;
+let up, down;
+let full = false;
+let set = 0;
+const targetY = window.innerHeight * .8;
+
+function scrollHandler(e) {
+  const {
+    scrollY
+  } = window;
+  up = scrollY < prevScrollY;
+  down = !up;
+  const timelineRect = timeline.getBoundingClientRect();
+  const lineRect = line.getBoundingClientRect(); // const lineHeight = lineRect.bottom - lineRect.top;
+
+  const dist = targetY - timelineRect.top;
+  console.log(dist);
+
+  if (down && !full) {
+    set = Math.max(set, dist);
+    line.style.bottom = `calc(100% - ${set}px)`;
+  }
+
+  if (dist > timeline.offsetHeight + 50 && !full) {
+    full = true;
+    line.style.bottom = `-50px`;
+  }
+
+  sections.forEach(item => {
+    // console.log(item);
+    const rect = item.getBoundingClientRect(); //     console.log(rect);
+
+    if (rect.top + item.offsetHeight / 5 < targetY) {
+      item.classList.add('show-me');
+    }
+  }); // console.log(up, down);
+
+  prevScrollY = window.scrollY;
+}
+
+scrollHandler();
+line.style.display = 'block';
+window.addEventListener('scroll', scrollHandler);
+</script>
 </body>
 </html>
