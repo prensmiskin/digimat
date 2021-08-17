@@ -10,9 +10,6 @@
   <!-- Favicons -->
   <link href="r.png" rel="icon">
   <link href="r.png" rel="apple-touch-icon">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800|Montserrat:300,400,700" rel="stylesheet">
@@ -31,10 +28,49 @@
 
   <!-- Main Stylesheet File -->
   <link href="css/style.css" rel="stylesheet">
- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-  
+
+  <style>
+
+/* The Modal (background) */
+.modal, .modal2 {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content,.modal2-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+/* The Close Button */
+.close,.close2 {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus,.close2:hover,
+.close2:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+</style>
 </head>
 
 <body id="body">
@@ -50,8 +86,8 @@
       
       </div>
       <div class="social-links float-right">
-        <a target="_blank" href="https://www.instagram.com/randaelektronik/" class="instagram"><i class="fa fa-instagram"></i></a>
-        <a target="_blank"  href="https://www.linkedin.com/in/randaelektronik/" class="linkedin"><i class="fa fa-linkedin"></i></a>
+        <a href="https://www.instagram.com/randaelektronik/" class="instagram"><i class="fa fa-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/randaelektronik/" class="linkedin"><i class="fa fa-linkedin"></i></a>
       </div>
     </div>
   </section>
@@ -69,7 +105,8 @@
       <div id="logo" class="pull-left">
         <!-- Uncomment below if you prefer to use an image logo -->
         <!-- <a href="#body"><img src="img/logo.png" alt="" title="" /></a>-->
-                    <img style="width:100px;height:25px;"src="https://www.randaglobal.com/wp-content/uploads/randa-header-logo.png" alt=""></img>
+                      <a href="index.html"> <img style="width:100px;height:25px;"src="https://www.randaglobal.com/wp-content/uploads/randa-header-logo.png" alt=""></img>
+</a>
 
       </div>
 
@@ -77,11 +114,11 @@
         <ul class="nav-menu">
           <li ><a href="index.html">Anasayfa</a></li>
           <li ><a href="kurumsal.html">Kurumsal</a></li>
-                     <li ><a href="haber.html">Haberler</a></li>
-                             <li class="menu-active" ><a href="referans.html">Referanslar</a></li>
-          <li class="menu-has-children"><a >Hizmetlerimiz</a>
+                     <li><a href="haber.html">Haberler</a></li>
+                               <li><a href="referans.html">Referanslar</a></li>
+          <li class="menu-active" class="menu-has-children"><a href="">Hizmetlerimiz</a>
             <ul>
-              <li><a href="ip.html">İp Hemşire Çağrı</a></li>
+             <li><a href="ip.html">İp Hemşire Çağrı</a></li>
               <li><a href="kablolu.html">Kablolu Hemşire Çağrı</a></li>
               <li><a href="kablosuz.html">Kablosuz Hemşire Çağrı</a></li>
               <li><a href="sıramatık.html">Sıramatik</a></li>
@@ -98,39 +135,57 @@
   <!--==========================
     Intro Section
   ============================-->
+<style type="text/css">
+  
 
-<div class="d-flex justify-content-center">
+@media (min-width:500px) { 
+#anadiv {         
 
-<ul class="nav nav-tabs">
-  <li class="active" style="margin-left: 10px;margin-right: 10px;" ><a style="color: black;" data-toggle="tab" href="#home">Açıklama </a></li>
-  <li  style="margin-left: 10px;margin-right: 10px;">
-    <a style="color: black;" data-toggle="tab" href="#menu1">Ürünler
-  </a>
-</li>
 
-  <li style="margin-left: 10px;margin-right: 10px;" ><a  style="color: black;" data-toggle="tab" href="#menu2">Döküman</a></li>
-</ul>
+padding-left: 25%;padding-right: 25%;
+
+
+}
+ }
+
+
+</style>
+<div id="anadiv">
+<div class="text-center">
+                    <h2 style="font-size: 25px;margin-top: 5%;" class="section-heading text-uppercase">IP Merkezi Saat Sistemi
+
+
+
+
+                    </h2>
+                  
+                </div>
+  <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img class="d-block w-100" src="saat30.jpg" alt="First slide">
+    </div>
+   
+  </div>
 </div>
 
-<div class="tab-content">
-  <div id="home" class="tab-pane fade in active">
-    <h3 style="text-align: center;margin-top: 5%;" >İP Merkezi Saat  Sistemi</h3>
-    <p style="text-align: left;margin-left: 5%;margin-right: 5%; font-size: 15px;">
-Randa IP merkezi saat sistemi, senkronize bir zaman sistemi oluşturur. NTP server, GPS yardımıyla uydudan doğru zamanı alır ve bu zaman bilgisini bir tesis içerisindeki tüm tali saatlere dağıtır. 
-<br>
-Ana saat ünitesi, tali saatlerde oluşabilecek zaman sapmalarını önlemek için sık sık zaman sinyali gönderecek şekilde programlanmıştır. 
-<br>
-Bu sayede tesiste bulununan bir merkezi saat sistemine ait tüm tali saatlerin her saatte her zaman aynı zaman bilgisini göstermeleri sağlanır. Sistemde yer alan her bir saat farklı bir ethernet kablosu üzerinden güç ve veri sağlayan PoE/Power over Ethernet ile çalışır. Bu teknolojiyi kullanmak, adaptörler, farklı kablolar ve fişler gibi diğer cihazları bağlama ihtiyacını ortadan kaldırma avantajına sahiptir.
-</p>
 
 
 
-<section class="page-section bg-light" id="portfolio">
+
+
+
+    <section class="page-section bg-light" id="portfolio">
             <div class="container">
                 <div class="text-center">
-                    <h2 class="section-heading text-uppercase"></h2>
-                    <h3 class="section-subheading text-muted">Ürün Fotoğrafları</h3>
+                    <p  style="text-align: justify;" class="section-subheading text-muted">Randa IP merkezi saat sistemi, senkronize bir zaman sistemi oluşturur. NTP server, GPS yardımıyla uydudan doğru zamanı alır ve bu zaman bilgisini bir tesis içerisindeki tüm tali saatlere dağıtır. Ana saat ünitesi, tali saatlerde oluşabilecek zaman sapmalarını önlemek için sık sık zaman sinyali gönderecek şekilde programlanmıştır.
+
+ </p>
                 </div>
+                <div style="margin-left: 5%;" class="section-header">
+
+   <h2 style="font-size: 18px;" >Ürünler</h2>
+        </div>
                 <div class="row">
                     <div class="col-lg-4 col-sm-6 mb-4">
                         <!-- Portfolio item 1-->
@@ -139,7 +194,100 @@ Bu sayede tesiste bulununan bir merkezi saat sistemine ait tüm tali saatlerin h
                                     <div class="portfolio-hover-content">
 </div>
                                 </div>
-                                <img class="img-fluid" src="saat1.jpg" alt="..." />
+                                <button  style="border: none;" id="myBtn"> 
+<img class="img-fluid" src="saat1.jpg" alt="..." />
+</button>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">NTP Server
+
+</div>
+                                <div class="portfolio-caption-subheading text-muted"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 mb-4">
+                        <!-- Portfolio item 2-->
+                        <div class="portfolio-item">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content">
+</div>
+                                </div>
+                                                                <button  style="border: none;" id="myBtn2"> 
+
+                                <img class="img-fluid" src="saat2.jpg" alt="..." />
+                              </button>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">Analog Tali Saat
+
+</div>
+                                <div class="portfolio-caption-subheading text-muted"> </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 mb-4">
+                        <!-- Portfolio item 3-->
+                        <div class="portfolio-item">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content">
+</div>
+                                </div>
+                                <button  style="border: none;" id="myBtn3"> 
+                                <img class="img-fluid" src="saat3.jpg" alt="..." />
+                              </button>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">Dijital Tali Saat
+
+
+</div>
+                                <div class="portfolio-caption-subheading text-muted"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 mb-4 mb-lg-0">
+                        <!-- Portfolio item 4-->
+                        <div class="portfolio-item">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content">
+</div>
+                                </div>
+                                <button  style="border: none;" id="myBtn4"> 
+                                <img class="img-fluid" src="saat5.jpg" alt="..." />
+                              </button>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">Kronometreli Ameliyathane Saati
+
+
+</div>
+                                <div class="portfolio-caption-subheading text-muted"></div>
+                            </div>
+                        </div>
+                    </div>
+                 
+                   
+                     
+                     
+
+
+                </div>
+            </div>
+        </section>
+          <section class="page-section bg-light" id="portfolio">
+            <div class="container">
+                
+                <div style="margin-left: 5%;" class="section-header">
+
+   <h2  style="font-size: 18px;">Dökümanlar</h2>
+        </div>
+                <div class="row">
+                    <div class="col-lg-4 col-sm-6 mb-4">
+                        <!-- Portfolio item 1-->
+                        <div class="portfolio-item">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content">
+</div>
+                                </div>
+                                <a href="https://www.randaglobal.com/wp-content/uploads/wiring-diagrams/ip-based-synchronized-clock-system-wiring-diagram.pdf" target="_blank">
+                                <img class="img-fluid" src="adope.png" alt="..." /></a>
                             <div class="portfolio-caption">
                                 <div class="portfolio-caption-heading"></div>
                                 <div class="portfolio-caption-subheading text-muted"></div>
@@ -153,7 +301,7 @@ Bu sayede tesiste bulununan bir merkezi saat sistemine ait tüm tali saatlerin h
                                     <div class="portfolio-hover-content">
 </div>
                                 </div>
-                                <img class="img-fluid" src="saat2.jpg" alt="..." />
+                                <img class="img-fluid" src="adope.png" alt="..." />
                             <div class="portfolio-caption">
                                 <div class="portfolio-caption-heading"></div>
                                 <div class="portfolio-caption-subheading text-muted"> </div>
@@ -167,289 +315,314 @@ Bu sayede tesiste bulununan bir merkezi saat sistemine ait tüm tali saatlerin h
                                     <div class="portfolio-hover-content">
 </div>
                                 </div>
-                                <img class="img-fluid" src="saat3.jpg" alt="..." />
+                                <img class="img-fluid" src="adope.png" alt="..." />
                             <div class="portfolio-caption">
                                 <div class="portfolio-caption-heading"></div>
                                 <div class="portfolio-caption-subheading text-muted"></div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-sm-6 mb-4 mb-lg-0">
-                        <!-- Portfolio item 4-->
-                        <div class="portfolio-item">
-                                <div class="portfolio-hover">
-                                    <div class="portfolio-hover-content">
-</div>
-                                </div>
-                                <img class="img-fluid" src="saat4.png" alt="..." />
-                            <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading"></div>
-                                <div class="portfolio-caption-subheading text-muted"></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-sm-6 mb-4 mb-sm-0">
-                        <!-- Portfolio item 5-->
-                        <div class="portfolio-item">
-                                <div class="portfolio-hover">
-                                    <div class="portfolio-hover-content">
-</div>
-                                </div>
-                                <img class="img-fluid" src="saat5.jpg" alt="..." />
-                            <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading"></div>
-                                <div class="portfolio-caption-subheading text-muted"> </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-sm-6 mb-4 mb-sm-0">
-                        <!-- Portfolio item 5-->
-                        <div class="portfolio-item">
-                                <div class="portfolio-hover">
-                                    <div class="portfolio-hover-content">
-</div>
-                                </div>
-                                <img class="img-fluid" src="saat6.jpg" alt="..." />
-                            <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading"></div>
-                                <div class="portfolio-caption-subheading text-muted"> </div>
-                            </div>
-                        </div>
-                    </div>
                     
                     
+                 
                     
-                   
                 </div>
             </div>
         </section>
+<!--  <section id="intro">
+
+    <div class="intro-content">
+      <h2 style="font-size: 20px;">Sıramatik Sistemleri <br><span style="">Hemşire Çağrı Sistemleri</span><br>Merkezi Saat Sistemleri</h2>
+      <div>
+        <a href="#about" class="btn-get-started scrollto">İncele</a>
+        <a href="#portfolio" class="btn-projects scrollto">Projelerimiz</a>
+      </div>
+    </div>
+
+    <div id="intro-carousel" class="owl-carousel" >
+      <div class="item" style="background-image: url('img/intro-carousel/1.jpg');"></div>
+      <div class="item" style="background-image: url('img/intro-carousel/2.jpg');"></div>
+      <div class="item" style="background-image: url('img/intro-carousel/3.jpg');"></div>
+      <div class="item" style="background-image: url('img/intro-carousel/4.jpg');"></div>
+      <div class="item" style="background-image: url('img/intro-carousel/5.jpg');"></div>
+    </div>
+
+  </section> #intro -->
+
+  
+    <!--==========================
+      About Section
+    ============================-->
 
     <!--==========================
-      Services Section
+    <section id="about" class="wow fadeInUp">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 about-img">
+            <img src="arge1.jpg" alt="">
+          </div>
+
+          <div class="col-lg-6 content">
+            <h3>ARGE</h3>
+
+            <ul>
+              <li><i class="ion-android-checkmark-circle"></i>Neden DİGİMAT ürünleri uzun süreler sorunsuz çalışmaktadır ? </li>
+              <li><i class="ion-android-checkmark-circle"></i>DİGİMAT Randa Elektronik şirketinin tescilli bir markasıdır.</li>
+              <li><i class="ion-android-checkmark-circle"></i> DİGİMAT ürünlerinin uzun süreler sorunsuz çalışmasının sebebi Randa Elektironik şirketinin bir ARGE şirketi olmasından kaynaklanmaktadır. </li>
+              <li><i class="ion-android-checkmark-circle"></i> Dünyanın bir çok ülkesinden gelen Feedback'ler ile ürünlerimizi kusursuz ve yenilikci yapmak için çalışmaktayız. </li>
+            </ul>
+
+          </div>
+        </div>
+
+      </div>
+
+
+    </section>
+
     ============================-->
 
 
 
+                  </div>
+
+
+
+<!-- Trigger/Open The Modal -->
+
+<!-- The Modal -->
+<div id="myModal" class="modal" >
+
+  <!-- Modal content -->
+  <div class="modal-content" style="width: 70%;height: 80%;overflow-y: scroll"> 
+    <span class="close">&times;</span>
+<div style="padding-left: 20%;padding-right: 20%;"> <img style="margin-left: auto;
+  margin-right: auto;" class="img-fluid" src="saat1.jpg" alt="..." />  </div>
+  <div style="padding-left: 10%;padding-right: 10%;"> 
+  <p style="text-align: center;">NTP Server
+
+</p>   
+    <p style="text-align: justify;">Randa NTP Server çok uygun maliyetli, doğru, Stratum-1 GPS referanslıdır ve kompakt bir kasada Network Time Protocol Server'dır. Randa NTP server, ağlara doğru zamanlama sağlar ve NTPv2 (RFC 1119), NTPv3 (RFC 1306) ve NTPv4 (RFC 5905) ile uyumludur. Tali saatler, sürekli olarak doğru bir zaman gösterimi sağlamak için bir ethernet ağı üzerinden Ağ Zaman Protokolü'nü (NTP) kullanarak senkronize edilir. Saatler, internet tabanlı veya yerel NTP sunucusundan saatinden zaman alabilir.
+</p>   
+  
+
+
+
+
+
+
+</div>
+  </div>
+
+
+                    </div>  <!-- mymodal modal 1  -->
+
+<div id="myModal2" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content" style="width: 70%;height: 80%;overflow-y: scroll">
+    <span class="close2">&times;</span>
+<div style="padding-left: 20%;padding-right: 20%;">   <img style="margin-left: auto;
+  margin-right: auto;" class="img-fluid" src="saat2.jpg" alt="..." />  </div>
+    <div style="padding-left: 10%;padding-right: 10%;"> 
+
+  <p style="text-align: center;">Analog Tali Saat
+
+
+</p>  
+    <p style="text-align: justify;">Uygulanacak yere göre tek yüzlü veya çift yüzlü, 30 cm ya da 40 cm çaplı olarak seçilebilir. Network (TCP/IP) özelliklidir. Kasası ABS plastiktir. IP40 koruma sınıfına sahiptir. PoE (Ethernet Üzerinden Güç) teknolojisine sahip düşük voltajlı bir güç kaynağına sahiptir.
+</p>  
+
+
+  
 
 
 
   </div>
+  </div>
 
-  <div id="menu1" class="tab-pane fade">
-     <section class="page-section bg-light" id="portfolio">
-            <div class="container">
-                <div class="text-center">
-                    <h2 class="section-heading text-uppercase">İP Merkezi Saat Sistemi</h2>
-                    <h3 class="section-subheading text-muted">Ürünler</h3>
-                </div>
-                <div class="row">
-                    <div class="col-lg-4 col-sm-6 mb-4">
+</div>
+
+
+
+<div id="myModal3" class="modal" style="">
+
+  <!-- Modal content -->
+  <div class="modal-content" style="width: 70%;height: 80%;overflow-y: scroll">
+    <span class="close3">&times;</span>
                         <!-- Portfolio item 1-->
-                        <div class="portfolio-item">
-                                <div class="portfolio-hover">
-                                    <div class="portfolio-hover-content">
-</div>
-                                </div>
-                                <img class="img-fluid" src="saat7.jpg" alt="..." />
-                            <div class="portfolio-caption">
-                              <h4 style="margin-top: 10%;" >NTP Server
-</h4>
-                              <p>Randa NTP Server çok uygun maliyetli, doğru, Stratum-1 GPS referanslıdır ve kompakt bir kasada Network Time Protocol Server'dır. Randa NTP server, ağlara doğru zamanlama sağlar ve NTPv2 (RFC 1119), NTPv3 (RFC 1306) ve NTPv4 (RFC 5905) ile uyumludur. Tali saatler, sürekli olarak doğru bir zaman gösterimi sağlamak için bir ethernet ağı üzerinden Ağ Zaman Protokolü'nü (NTP) kullanarak senkronize edilir. Saatler, internet tabanlı veya yerel NTP sunucusundan saatinden zaman alabilir.</p>
-                                <div class="portfolio-caption-heading"></div>
-                                <div class="portfolio-caption-subheading text-muted"></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-sm-6 mb-4">
-                        <!-- Portfolio item 2-->
-                        <div class="portfolio-item">
-                                <div class="portfolio-hover">
-                                    <div class="portfolio-hover-content">
-</div>
-                                </div>
-                                <img class="img-fluid" src="saat8.jpg" alt="..." />
-                            <div class="portfolio-caption">
-                              <h4 style="margin-top: 10%;">Analog Tali Saat
+                  <div style="padding-left: 20%;padding-right: 20%;"> <img style="margin-left: auto;
+  margin-right: auto;" class="img-fluid" src="saat3.jpg" alt="..." /> </div> 
+<div style="padding-left: 10%;padding-right: 10%;"> 
 
-</h4>
-                              <p>Uygulanacak yere göre tek yüzlü veya çift yüzlü, 30 cm ya da 40 cm çaplı olarak seçilebilir. Network (TCP/IP) özelliklidir. Kasası ABS plastiktir. IP40 koruma sınıfına sahiptir. PoE (Ethernet Üzerinden Güç) teknolojisine sahip düşük voltajlı bir güç kaynağına sahiptir.</p>
-                                <div class="portfolio-caption-heading"></div>
-                                <div class="portfolio-caption-subheading text-muted"> </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-sm-6 mb-4">
-                        <!-- Portfolio item 3-->
-                        <div class="portfolio-item">
-                                <div class="portfolio-hover">
-                                    <div class="portfolio-hover-content">
-</div>
-                                </div>
-                                <img class="img-fluid" src="saat9.jpg" alt="..." />
-                            <div class="portfolio-caption">
-                              <h4 style="margin-top: 10%;">Dijital Tali Saat
-
-
-</h4>
-                              <p>Dijital saatler, 7 segment 4 haneli, saat ve dakika gösterecek şekilde tasarlanmıştır. 6 haneden oluşan, kronometreli dijital saat seçeneği de mevcuttur. LED rengi standart kırmızıdır. İsteğe bağlı, farklı renkte led göstergeler kullanılabilir. NTP Server, kablosuz RF veya RS485 haberleşme seçenekleri mevcuttur. Saat/tarih ve diğer verileri ana saat üzerinden otomatik olarak alır ve sistemdeki tüm saatler senkronize çalışır. PoE (Ethernet Üzerinden Güç) teknolojisine sahip düşük voltajlı bir güç kaynağına sahiptir.</p>
-                                <div class="portfolio-caption-heading"></div>
-                                <div class="portfolio-caption-subheading text-muted"></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-sm-6 mb-4 mb-lg-0">
-                        <!-- Portfolio item 4-->
-                        <div class="portfolio-item">
-                                <div class="portfolio-hover">
-                                    <div class="portfolio-hover-content">
-</div>
-                                </div>
-                                <img class="img-fluid" src="saat10.jpg" alt="..." />
-                            <div class="portfolio-caption">
-                              <h4 style="margin-top: 10%;">Kronometreli Ameliyathane Saati
-
-
-</h4>
-                              <p>Bir ameliyat odasının özel ihtiyaçları göz önünde bulundurularak paslanmaz çelik gövde ile tasarlanmıştır. Saat, dakika ve saniye bilgisi gösterir. Ayrıca dönüşümlü olarak ölçülen sıcaklık ve nem değerlerini de gösterilebilir. Bu dijital saat, NTP protokolüne entegre olur ve PoE (Ethernet Üzerinden Güç) teknolojisine sahip düşük voltajlı bir güç kaynağına sahiptir.</p>
-                                <div class="portfolio-caption-heading"></div>
-                                <div class="portfolio-caption-subheading text-muted"></div>
-                            </div>
-                        </div>
-                    </div>
-                   
-                   
+  <p style="text-align: center;">Dijital Tali Saat
 
 
 
-                
-                    
+</p>  
+    <p style="text-align: justify;">Dijital saatler, 7 segment 4 haneli, saat ve dakika gösterecek şekilde tasarlanmıştır. 6 haneden oluşan, kronometreli dijital saat seçeneği de mevcuttur. LED rengi standart kırmızıdır. İsteğe bağlı, farklı renkte led göstergeler kullanılabilir. NTP Server, kablosuz RF veya RS485 haberleşme seçenekleri mevcuttur. Saat/tarih ve diğer verileri ana saat üzerinden otomatik olarak alır ve sistemdeki tüm saatler senkronize çalışır. PoE (Ethernet Üzerinden Güç) teknolojisine sahip düşük voltajlı bir güç kaynağına sahiptir.
+</p>  
+
+
+  
 
 
 
 
-
-
-                </div>
-            </div>
-        </section>
-
+  </div>  </div>
   </div>
-  <div id="menu2" class="tab-pane fade">
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<div id="myModal4" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content" style="width: 70%;height: 80%;overflow-y: scroll">
+    <span class="close4">&times;</span>
+    <div style="padding-left: 20%;padding-right: 20%;"> 
+   <img style="margin-left: auto;margin-right: auto; "  class="img-fluid" src="saat5.jpg" alt="..." />  </div>
+<div style="padding-left: 10%;padding-right: 10%;"> 
+
+  <p style="text-align: center;">Kronometreli Ameliyathane Saati
+
+
+
+</p>  
+    <p style="text-align: justify;">Yetkili personelin bekleyen bilet numarasını çağırmasını sağlayan ünitedir. Diğer özellikler: • Sırada bekleyen bilet numarasını bankoya çağırmak için kullanılır. • Bekleyen kişi sayısı ekranında görülür. • İşlemi başka bankoya transfer edebilir. • Şifre girilerek kişiye özel çalışabilir. • Sanal terminal yazılımı ile paralel çalışabilir.</p>  
+
+
+  
+
+
+
+  </div>   </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+
+
+var xmodal = document.getElementsByClassName("modal");
+
+
+// Get the modal
+var modal = document.getElementById("myModal");
+var modal2 = document.getElementById("myModal2");
+var modal3= document.getElementById("myModal3");
+var modal4 = document.getElementById("myModal4");
+
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+var btn2 = document.getElementById("myBtn2");
+var btn3 = document.getElementById("myBtn3");
+var btn4 = document.getElementById("myBtn4");
+
+
+
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+var span2 = document.getElementsByClassName("close2")[0];
+var span3 = document.getElementsByClassName("close3")[0];
+var span4 = document.getElementsByClassName("close4")[0];
+
+
+// When the user clicks the button, open the modal 
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+btn2.onclick = function() {
+  modal2.style.display = "block";
+}
+btn3.onclick = function() {
+  modal3.style.display = "block";
+
+}
+btn4.onclick = function() {
+  modal4.style.display = "block";
+}
+
+
+
+// When the user clicks on <span> (x), close the modal
+span2.onclick = function() {
+  modal2.style.display = "none";
+}
+span.onclick = function() {
+  modal.style.display = "none";
+}
+span3.onclick = function() {
+  modal3.style.display = "none";
+}
+span4.onclick = function() {
+  modal4.style.display = "none";
+}
+
+
+// When the user clicks anywhere outside of the modal, close it
+
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }else if (event.target == modal2){
+    modal2.style.display = "none";
+
+  }else if (event.target == modal3){
+    modal3.style.display = "none";
+
+  }else if (event.target == modal4){
+    modal4.style.display = "none";
+
+  }
+}
+</script>
+
+
+
    
-
-<section  class="page-section bg-light" id="portfolio">
-            <div class="container">
-                <div class="text-center">
-                    <h2 class="section-heading text-uppercase">İP Merkezi Saat Sistemi</h2>
-                    <h3 class="section-subheading text-muted">Dökümanlar</h3>
-                </div>
-                <div   class="row">
-                    <div  class="col-lg-4 col-sm-6 mb-4">
-                        <!-- Portfolio item 1-->
-                        <div class="portfolio-item">
-                                <div class="portfolio-hover">
-                                    <div class="portfolio-hover-content">
-</div>
-                                </div>
-                                <a ><img  class="img-fluid" src="adope.png" alt="..." /></a>
-                                <p style="margin-top: 10%;" >İP Merkezi Saat Sistemi Bağlantı Şeması</p>
-                            <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading"></div>
-                                <div class="portfolio-caption-subheading text-muted"></div>
-                            </div>
-                        </div>
-                    </div>
-
-<div class="col-lg-4 col-sm-6 mb-4">
-                        <!-- Portfolio item 1-->
-                        <div class="portfolio-item">
-                                <div class="portfolio-hover">
-                                    <div class="portfolio-hover-content">
-</div>
-                                </div>
-                                <a ><img class="img-fluid" src="adope.png" alt="..." /></a>
-                        <p style="margin-top: 10%;" >İP Merkezi Saat Sistemi Bağlantı Şeması 2</p>
-
-                            <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading"></div>
-                                <div class="portfolio-caption-subheading text-muted"></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-sm-6 mb-4">
-                        <!-- Portfolio item 1-->
-                        <div class="portfolio-item">
-                                <div class="portfolio-hover">
-                                    <div class="portfolio-hover-content">
-</div>
-                                </div>
-                                <a ><img class="img-fluid" src="adope.png" alt="..." /></a>
-                        <p style="margin-top: 10%;" >İP Merkezi Saat Sistemi Brojür</p>
-
-                            <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading"></div>
-                                <div class="portfolio-caption-subheading text-muted"></div>
-                            </div>
-                        </div>
-                    </div>
-
-
-
-
-
-
-
-
-
-
- </div>
-
-
-
-
-
-
-
-
-
-
-
-            </div>
-        </section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  </div>
-</div>
-
-</div>
-
-   
-
-
   <footer id="footer">
     <div class="container">
       <div class="copyright">
@@ -483,7 +656,7 @@ Bu sayede tesiste bulununan bir merkezi saat sistemine ait tüm tali saatlerin h
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD8HeI8o-c1NppZA-92oYlXakhDPYR7XMY"></script>
   <!-- Contact Form JavaScript File -->
   <script src="contactform/contactform.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
   <!-- Template Main Javascript File -->
   <script src="js/main.js"></script>
 

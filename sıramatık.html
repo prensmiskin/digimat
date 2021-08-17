@@ -10,9 +10,6 @@
   <!-- Favicons -->
   <link href="r.png" rel="icon">
   <link href="r.png" rel="apple-touch-icon">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800|Montserrat:300,400,700" rel="stylesheet">
@@ -31,10 +28,49 @@
 
   <!-- Main Stylesheet File -->
   <link href="css/style.css" rel="stylesheet">
- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-  
+
+  <style>
+
+/* The Modal (background) */
+.modal, .modal2 {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content,.modal2-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+/* The Close Button */
+.close,.close2 {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus,.close2:hover,
+.close2:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+</style>
 </head>
 
 <body id="body">
@@ -50,8 +86,8 @@
       
       </div>
       <div class="social-links float-right">
-        <a target="_blank" href="https://www.instagram.com/randaelektronik/" class="instagram"><i class="fa fa-instagram"></i></a>
-        <a target="_blank"  href="https://www.linkedin.com/in/randaelektronik/" class="linkedin"><i class="fa fa-linkedin"></i></a>
+        <a href="https://www.instagram.com/randaelektronik/" class="instagram"><i class="fa fa-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/randaelektronik/" class="linkedin"><i class="fa fa-linkedin"></i></a>
       </div>
     </div>
   </section>
@@ -69,7 +105,8 @@
       <div id="logo" class="pull-left">
         <!-- Uncomment below if you prefer to use an image logo -->
         <!-- <a href="#body"><img src="img/logo.png" alt="" title="" /></a>-->
-                    <img style="width:100px;height:25px;"src="https://www.randaglobal.com/wp-content/uploads/randa-header-logo.png" alt=""></img>
+                      <a href="index.html"> <img style="width:100px;height:25px;"src="https://www.randaglobal.com/wp-content/uploads/randa-header-logo.png" alt=""></img>
+</a>
 
       </div>
 
@@ -77,11 +114,11 @@
         <ul class="nav-menu">
           <li ><a href="index.html">Anasayfa</a></li>
           <li ><a href="kurumsal.html">Kurumsal</a></li>
-                     <li ><a href="haber.html">Haberler</a></li>
-                             <li class="menu-active" ><a href="referans.html">Referanslar</a></li>
-          <li class="menu-has-children"><a >Hizmetlerimiz</a>
+                     <li><a href="haber.html">Haberler</a></li>
+                               <li><a href="referans.html">Referanslar</a></li>
+          <li class="menu-active" class="menu-has-children"><a href="">Hizmetlerimiz</a>
             <ul>
-              <li><a href="ip.html">İp Hemşire Çağrı</a></li>
+             <li><a href="ip.html">İp Hemşire Çağrı</a></li>
               <li><a href="kablolu.html">Kablolu Hemşire Çağrı</a></li>
               <li><a href="kablosuz.html">Kablosuz Hemşire Çağrı</a></li>
               <li><a href="sıramatık.html">Sıramatik</a></li>
@@ -98,194 +135,56 @@
   <!--==========================
     Intro Section
   ============================-->
+<style type="text/css">
+  
 
-<div class="d-flex justify-content-center">
+@media (min-width:500px) { 
+#anadiv {         
 
-<ul class="nav nav-tabs">
-  <li class="active" style="margin-left: 10px;margin-right: 10px;" ><a style="color: black;" data-toggle="tab" href="#home">Açıklama </a></li>
-  <li  style="margin-left: 10px;margin-right: 10px;">
-    <a style="color: black;" data-toggle="tab" href="#menu1">Ürünler
-  </a>
-</li>
 
-  <li style="margin-left: 10px;margin-right: 10px;" ><a  style="color: black;" data-toggle="tab" href="#menu2">Döküman</a></li>
-</ul>
-</div>
+padding-left: 25%;padding-right: 25%;
 
-<div class="tab-content">
-  <div id="home" class="tab-pane fade in active">
-    <h3 style="text-align: center;margin-top: 5%;" >Dokunmatik Sıramatik  Sistemi</h3>
-    <p style="text-align: left;margin-left: 5%;margin-right: 5%; font-size: 15px;">
 
-Digimat sıramatik sistemi temel olarak, bir servis merkezindeki müşteri etkileşimlerini yönetmek ve analiz etmek için tasarlanmış teknolojik bir çözümdür. Sistem, gün boyunca müşteri akışını yöneterek ve analiz ederek tıkanıklığın giderilmesini amaçlamaktadır. 
-<br>
-Sıramatik sistemleri, hastaneler, belediyeler, noterler, bankalar, klinikler, şirketler ve diğer kuruluşlar için zaman kaybı ve emek israfını azaltırken, müşteri memnuniyeti ve personel verimliliğinin artmasına da önemli katkı sağlar. Digimat sıra çağrı sistemi, size sınırsız sayıda kuyruk ve işlem olanağı sağlar. Aynı zamanda tek bir sistemde 50’nin üzerinde operatöre sahip olmanıza izin verir. Sistem, hem yazılım hem de fiziksel kontrol panelleri tarafından yönetilmektedir.
-<br>
+}
+ }
 
-Verileri performansa dönüştürün;
-Digimat sıramatik sisteminde gerçekleştirilen her işlem, servis yöneticilerinin servis performansı ile ilgili gerçek zamanlı bilgilere ve geçmiş istatistiklerine erişmelerini sağlayan değerli verilere dönüştürülür.
-<br>
 
-Kuyruk yönetimi alanındaki uzun yıllara dayanan deneyimimiz çok işlevli sistemler üretmemizi sağlar.</p>
+</style>
+<div id="anadiv">
+<div class="text-center">
+                    <h2 style="font-size: 25px;margin-top: 5%;" class="section-heading text-uppercase">Kiosk – Dokunmatik Sıramatik Sistemi
 
 
 
-<section class="page-section bg-light" id="portfolio">
-            <div class="container">
-                <div class="text-center">
-                    <h2 class="section-heading text-uppercase"></h2>
-                    <h3 class="section-subheading text-muted">Ürün Fotoğrafları</h3>
+                    </h2>
+                  
                 </div>
-                <div class="row">
-                    <div class="col-lg-4 col-sm-6 mb-4">
-                        <!-- Portfolio item 1-->
-                        <div class="portfolio-item">
-                                <div class="portfolio-hover">
-                                    <div class="portfolio-hover-content">
-</div>
-                                </div>
-                                <img class="img-fluid" src="kiosk1.png" alt="..." />
-                            <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading"></div>
-                                <div class="portfolio-caption-subheading text-muted"></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-sm-6 mb-4">
-                        <!-- Portfolio item 2-->
-                        <div class="portfolio-item">
-                                <div class="portfolio-hover">
-                                    <div class="portfolio-hover-content">
-</div>
-                                </div>
-                                <img class="img-fluid" src="kiosk2.png" alt="..." />
-                            <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading"></div>
-                                <div class="portfolio-caption-subheading text-muted"> </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-sm-6 mb-4">
-                        <!-- Portfolio item 3-->
-                        <div class="portfolio-item">
-                                <div class="portfolio-hover">
-                                    <div class="portfolio-hover-content">
-</div>
-                                </div>
-                                <img class="img-fluid" src="kiosk3.png" alt="..." />
-                            <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading"></div>
-                                <div class="portfolio-caption-subheading text-muted"></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-sm-6 mb-4 mb-lg-0">
-                        <!-- Portfolio item 4-->
-                        <div class="portfolio-item">
-                                <div class="portfolio-hover">
-                                    <div class="portfolio-hover-content">
-</div>
-                                </div>
-                                <img class="img-fluid" src="kiosk4.png" alt="..." />
-                            <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading"></div>
-                                <div class="portfolio-caption-subheading text-muted"></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-sm-6 mb-4 mb-sm-0">
-                        <!-- Portfolio item 5-->
-                        <div class="portfolio-item">
-                                <div class="portfolio-hover">
-                                    <div class="portfolio-hover-content">
-</div>
-                                </div>
-                                <img class="img-fluid" src="kiosk5.png" alt="..." />
-                            <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading"></div>
-                                <div class="portfolio-caption-subheading text-muted"> </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-sm-6 mb-4 mb-sm-0">
-                        <!-- Portfolio item 5-->
-                        <div class="portfolio-item">
-                                <div class="portfolio-hover">
-                                    <div class="portfolio-hover-content">
-</div>
-                                </div>
-                                <img class="img-fluid" src="kiosk6.png" alt="..." />
-                            <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading"></div>
-                                <div class="portfolio-caption-subheading text-muted"> </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div style="margin-top: 2%;" class="col-lg-4 col-sm-6 mb-4 mb-sm-0">
-                        <!-- Portfolio item 5-->
-                        <div class="portfolio-item">
-                                <div class="portfolio-hover">
-                                    <div class="portfolio-hover-content">
-</div>
-                                </div>
-                                <img class="img-fluid" src="kiosk7.png" alt="..." />
-                            <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading"></div>
-                                <div class="portfolio-caption-subheading text-muted"> </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div style="margin-top: 2%;" class="col-lg-4 col-sm-6 mb-4 mb-sm-0">
-                        <!-- Portfolio item 5-->
-                        <div class="portfolio-item">
-                                <div class="portfolio-hover">
-                                    <div class="portfolio-hover-content">
-</div>
-                                </div>
-                                <img class="img-fluid" src="kiosk8.jpg" alt="..." />
-                            <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading"></div>
-                                <div class="portfolio-caption-subheading text-muted"> </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div style="margin-top: 2%;" class="col-lg-4 col-sm-6 mb-4 mb-sm-0">
-                        <!-- Portfolio item 5-->
-                        <div class="portfolio-item">
-                                <div class="portfolio-hover">
-                                    <div class="portfolio-hover-content">
-</div>
-                                </div>
-                                <img class="img-fluid" src="kiosk9.png" alt="..." />
-                            <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading"></div>
-                                <div class="portfolio-caption-subheading text-muted"> </div>
-                            </div>
-                        </div>
-                    </div>
-                   
-                </div>
-            </div>
-        </section>
-
-    <!--==========================
-      Services Section
-    ============================-->
-
-
-
-
-
-
+  <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img class="d-block w-100" src="kiosk50.jpg" alt="First slide">
+    </div>
+   
   </div>
+</div>
 
-  <div id="menu1" class="tab-pane fade">
-     <section class="page-section bg-light" id="portfolio">
+
+
+
+
+
+
+    <section class="page-section bg-light" id="portfolio">
             <div class="container">
                 <div class="text-center">
-                    <h2 class="section-heading text-uppercase">Kiosk Sıramatik Sistemi</h2>
-                    <h3 class="section-subheading text-muted">Ürünler</h3>
+                    <p  style="text-align: justify;" class="section-subheading text-muted">Digimat sıramatik sistemi temel olarak, bir servis merkezindeki müşteri etkileşimlerini yönetmek ve analiz etmek için tasarlanmış teknolojik bir çözümdür. Sistem, gün boyunca müşteri akışını yöneterek ve analiz ederek tıkanıklığın giderilmesini amaçlamaktadır. Sıramatik sistemleri, hastaneler, belediyeler, noterler, bankalar, klinikler, şirketler ve diğer kuruluşlar için zaman kaybı ve emek israfını azaltırken, müşteri memnuniyeti ve personel verimliliğinin artmasına da önemli katkı sağlar. 
+
+ </p>
                 </div>
+                <div style="margin-left: 5%;" class="section-header">
+
+   <h2 style="font-size: 18px;" >Ürünler</h2>
+        </div>
                 <div class="row">
                     <div class="col-lg-4 col-sm-6 mb-4">
                         <!-- Portfolio item 1-->
@@ -294,11 +193,12 @@ Kuyruk yönetimi alanındaki uzun yıllara dayanan deneyimimiz çok işlevli sis
                                     <div class="portfolio-hover-content">
 </div>
                                 </div>
-                                <img class="img-fluid" src="kiosk10.png" alt="..." />
+                                <button  style="border: none;" id="myBtn"> 
+<img class="img-fluid" src="kiosk10.png" alt="..." />
+</button>
                             <div class="portfolio-caption">
-                              <h4 style="margin-top: 10%;" >Kiosk Bilet Makinesi</h4>
-                              <p>Müşterinin sıra almasını sağlayan, dokunmatik ekrana ve Windows işletim sistemine sahip bilet makinesidir. Diğer özellikler: • 18,5 inç dikey dokunmatik ekran, • Sınırsız alt menü, • Yapılan işlemlerin raporlanabilmesi, • 58 mm kadar otomatik kesicili termal printer, • Bilgi mesajı ve karşılama ekranı seçenekleri, • 1,5 mm elektrostatik boyalı paslanmaz saç gövde. • Opsiyonel olarak; LCD ana göstergede resim veya video oynatabilme imkanlarına sahiptir.</p>
-                                <div class="portfolio-caption-heading"></div>
+                                <div class="portfolio-caption-heading">Kiosk Bilet Makinesi
+</div>
                                 <div class="portfolio-caption-subheading text-muted"></div>
                             </div>
                         </div>
@@ -310,12 +210,13 @@ Kuyruk yönetimi alanındaki uzun yıllara dayanan deneyimimiz çok işlevli sis
                                     <div class="portfolio-hover-content">
 </div>
                                 </div>
+                                                                <button  style="border: none;" id="myBtn2"> 
+
                                 <img class="img-fluid" src="kiosk11.jpg" alt="..." />
+                              </button>
                             <div class="portfolio-caption">
-                              <h4 style="margin-top: 10%;">Dot-Matrix LED Ana Gösterge
-</h4>
-                              <p>Dot-Matrix LED ana gösterge, bekleme alanlarına asılır. Bilet numarasını, müşterinin gitmesi gereken banko numarasını ve o bankonun yönüne işaret eden oku gösterir. Müşteri, bilet numarasını gördüğünde, bankoyu bulmak için ok yönüne göre hareket eder ve işlemine devam eder. Diğer özellikler: • Her satırda 10×40 nokta çözünürlüktedir. • Kırmızı renktedir. • Sıra numarasını ve çağıran banko numarasını yön okları ile birlikte gösterir. • Bilgi mesajı gösterebilir. • 10 satıra kadar gösterebilir. • Rakam boyu 76 mm’dir.</p>
-                                <div class="portfolio-caption-heading"></div>
+                                <div class="portfolio-caption-heading">Dot-Matrix LED Ana Gösterge
+</div>
                                 <div class="portfolio-caption-subheading text-muted"> </div>
                             </div>
                         </div>
@@ -327,13 +228,13 @@ Kuyruk yönetimi alanındaki uzun yıllara dayanan deneyimimiz çok işlevli sis
                                     <div class="portfolio-hover-content">
 </div>
                                 </div>
+                                <button  style="border: none;" id="myBtn3"> 
                                 <img class="img-fluid" src="kiosk12.jpg" alt="..." />
+                              </button>
                             <div class="portfolio-caption">
-                              <h4 style="margin-top: 10%;">Dot-Matrix LED Lokal Göstergesi
+                                <div class="portfolio-caption-heading">Dot-Matrix LED Lokal Göstergesi
 
-</h4>
-                              <p>Dot-Matrix LED lokal gösterge, her bankoya asılabilir. Bilet ve banko numaralarını gösterir. Diğer özellikler: • 10x40 nokta çözünürlüktedir. • Kırmızı renktedir. • 3 veya 4 haneli gösterge kapasitesi. • Bilgi mesajı gösterebilir. • Rakam boyu 76 mm’dir. • Boyutlar 360 x 130 mm’dir.</p>
-                                <div class="portfolio-caption-heading"></div>
+</div>
                                 <div class="portfolio-caption-subheading text-muted"></div>
                             </div>
                         </div>
@@ -345,13 +246,13 @@ Kuyruk yönetimi alanındaki uzun yıllara dayanan deneyimimiz çok işlevli sis
                                     <div class="portfolio-hover-content">
 </div>
                                 </div>
+                                <button  style="border: none;" id="myBtn4"> 
                                 <img class="img-fluid" src="kiosk13.jpg" alt="..." />
+                              </button>
                             <div class="portfolio-caption">
-                              <h4 style="margin-top: 10%;">Çağrı Terminali
+                                <div class="portfolio-caption-heading">Çağrı Terminali
 
-</h4>
-                              <p>Yetkili personelin bekleyen bilet numarasını çağırmasını sağlayan ünitedir. Diğer özellikler: • Sırada bekleyen bilet numarasını bankoya çağırmak için kullanılır. • Bekleyen kişi sayısı ekranında görülür. • İşlemi başka bankoya transfer edebilir. • Şifre girilerek kişiye özel çalışabilir. • Sanal terminal yazılımı ile paralel çalışabilir.</p>
-                                <div class="portfolio-caption-heading"></div>
+</div>
                                 <div class="portfolio-caption-subheading text-muted"></div>
                             </div>
                         </div>
@@ -363,14 +264,12 @@ Kuyruk yönetimi alanındaki uzun yıllara dayanan deneyimimiz çok işlevli sis
                                     <div class="portfolio-hover-content">
 </div>
                                 </div>
+                                <button  style="border: none;" id="myBtn5"> 
                                 <img class="img-fluid" src="kiosk14.png" alt="..." />
+                              </button>
                             <div class="portfolio-caption">
-                              <h4 style="margin-top: 10%;">Gong
-
-
-</h4>
-                              <p>Bankolardan yeni bir sıra çağrısı yapıldığını bildirmek için kullanılan sesli uyarı ünitesidir.</p>
-                                <div class="portfolio-caption-heading"></div>
+                                <div class="portfolio-caption-heading">Gong
+</div>
                                 <div class="portfolio-caption-subheading text-muted"> </div>
                             </div>
                         </div>
@@ -383,23 +282,20 @@ Kuyruk yönetimi alanındaki uzun yıllara dayanan deneyimimiz çok işlevli sis
                                     <div class="portfolio-hover-content">
 </div>
                                 </div>
+                                <button  style="border: none;" id="myBtn6"> 
                                 <img class="img-fluid" src="kiosk15.jpg" alt="..." />
+                              </button>
                             </a>
                             <div class="portfolio-caption">
-                              <h4 style="margin-top: 10%;">Rulo Kağıt
+                                <div class="portfolio-caption-heading">Rulo Kağıt
 
 
-</h4>
-                              <p>Piyasadan da rahatlıkla temin edilebilecek, termal ısıtma yöntemi ile çalışan sıramatik yazıcılarında kullanılan bilet kağıdıdır.
-</p>
-                                <div class="portfolio-caption-heading"></div>
+</div>
                                 <div class="portfolio-caption-subheading text-muted"></div>
                             </div>
                         </div>
                     </div>
-
-
-<div class="col-lg-4 col-sm-6">
+                     <div class="col-lg-4 col-sm-6">
                         <!-- Portfolio item 6-->
                         <div class="portfolio-item">
                             <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal6">
@@ -407,73 +303,34 @@ Kuyruk yönetimi alanındaki uzun yıllara dayanan deneyimimiz çok işlevli sis
                                     <div class="portfolio-hover-content">
 </div>
                                 </div>
+                                <button  style="border: none;" id="myBtn7"> 
                                 <img class="img-fluid" src="kiosk16.jpg" alt="..." />
+                              </button>
                             </a>
                             <div class="portfolio-caption">
-                              <h4 style="margin-top: 10%;">Güç Kaynağı
-</h4>
-                              <p>12V/5A güç kaynağıdır. Her 4 bankoda 1 adet güç kaynağı kullanılması önerilir.
-</p>
-                                <div class="portfolio-caption-heading"></div>
+                                <div class="portfolio-caption-heading">Güç Kaynağı
+
+
+
+</div>
                                 <div class="portfolio-caption-subheading text-muted"></div>
                             </div>
                         </div>
                     </div>
-                
-                    
-
-
-
-
+                     
 
 
                 </div>
             </div>
         </section>
-
-  </div>
-  <div id="menu2" class="tab-pane fade">
-   
-
-<section  class="page-section bg-light" id="portfolio">
+          <section class="page-section bg-light" id="portfolio">
             <div class="container">
-                <div class="text-center">
-                    <h2 class="section-heading text-uppercase">Kiosk Dokunmatik Sıramatik Sistemi</h2>
-                    <h3 class="section-subheading text-muted">Dökümanlar</h3>
-                </div>
-                <div   class="row">
-                    <div  class="col-lg-4 col-sm-6 mb-4">
-                        <!-- Portfolio item 1-->
-                        <div class="portfolio-item">
-                                <div class="portfolio-hover">
-                                    <div class="portfolio-hover-content">
-</div>
-                                </div>
-                                <a href="https://randa.com.tr/wp-content/uploads/2019/09/kiosk-siramatik-baglanti-semasi.pdf" target="_blank"><img  class="img-fluid" src="adope.png" alt="..." /></a>
-                                <p style="margin-top: 10%;" >Kiosk Dokunmatik Sıramatik Sistemi Bağlantı Şeması</p>
-                            <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading"></div>
-                                <div class="portfolio-caption-subheading text-muted"></div>
-                            </div>
-                        </div>
-                    </div>
+                
+                <div style="margin-left: 5%;" class="section-header">
 
-<div class="col-lg-4 col-sm-6 mb-4">
-                        <!-- Portfolio item 1-->
-                        <div class="portfolio-item">
-                                <div class="portfolio-hover">
-                                    <div class="portfolio-hover-content">
-</div>
-                                </div>
-                                <a ><img class="img-fluid" src="adope.png" alt="..." /></a>
-                        <p style="margin-top: 10%;" >Kiosk Dokunmatik Sıramatik Sistemi Bağlantı Şeması 2</p>
-
-                            <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading"></div>
-                                <div class="portfolio-caption-subheading text-muted"></div>
-                            </div>
-                        </div>
-                    </div>
+   <h2  style="font-size: 18px;">Dökümanlar</h2>
+        </div>
+                <div class="row">
                     <div class="col-lg-4 col-sm-6 mb-4">
                         <!-- Portfolio item 1-->
                         <div class="portfolio-item">
@@ -481,73 +338,451 @@ Kuyruk yönetimi alanındaki uzun yıllara dayanan deneyimimiz çok işlevli sis
                                     <div class="portfolio-hover-content">
 </div>
                                 </div>
-                                <a ><img class="img-fluid" src="adope.png" alt="..." /></a>
-                        <p style="margin-top: 10%;" >Kiosk Dokunmatik Sıramatik Sistemi Brojür</p>
-
+                                <a href="https://randa.com.tr/wp-content/uploads/2019/09/kiosk-siramatik-baglanti-semasi.pdf" target="_blank">
+                                <img class="img-fluid" src="adope.png" alt="..." /></a>
                             <div class="portfolio-caption">
                                 <div class="portfolio-caption-heading"></div>
                                 <div class="portfolio-caption-subheading text-muted"></div>
                             </div>
                         </div>
                     </div>
-
-
-
-
-
-
-
-
-
-
- </div>
-
-
-
-
-
-
-
-
-
-
-
+                    <div class="col-lg-4 col-sm-6 mb-4">
+                        <!-- Portfolio item 2-->
+                        <div class="portfolio-item">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content">
+</div>
+                                </div>
+                                <img class="img-fluid" src="adope.png" alt="..." />
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading"></div>
+                                <div class="portfolio-caption-subheading text-muted"> </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 mb-4">
+                        <!-- Portfolio item 3-->
+                        <div class="portfolio-item">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content">
+</div>
+                                </div>
+                                <img class="img-fluid" src="adope.png" alt="..." />
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading"></div>
+                                <div class="portfolio-caption-subheading text-muted"></div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
+                 
+                    
+                </div>
             </div>
         </section>
+<!--  <section id="intro">
+
+    <div class="intro-content">
+      <h2 style="font-size: 20px;">Sıramatik Sistemleri <br><span style="">Hemşire Çağrı Sistemleri</span><br>Merkezi Saat Sistemleri</h2>
+      <div>
+        <a href="#about" class="btn-get-started scrollto">İncele</a>
+        <a href="#portfolio" class="btn-projects scrollto">Projelerimiz</a>
+      </div>
+    </div>
+
+    <div id="intro-carousel" class="owl-carousel" >
+      <div class="item" style="background-image: url('img/intro-carousel/1.jpg');"></div>
+      <div class="item" style="background-image: url('img/intro-carousel/2.jpg');"></div>
+      <div class="item" style="background-image: url('img/intro-carousel/3.jpg');"></div>
+      <div class="item" style="background-image: url('img/intro-carousel/4.jpg');"></div>
+      <div class="item" style="background-image: url('img/intro-carousel/5.jpg');"></div>
+    </div>
+
+  </section> #intro -->
+
+  
+    <!--==========================
+      About Section
+    ============================-->
+
+    <!--==========================
+    <section id="about" class="wow fadeInUp">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 about-img">
+            <img src="arge1.jpg" alt="">
+          </div>
+
+          <div class="col-lg-6 content">
+            <h3>ARGE</h3>
+
+            <ul>
+              <li><i class="ion-android-checkmark-circle"></i>Neden DİGİMAT ürünleri uzun süreler sorunsuz çalışmaktadır ? </li>
+              <li><i class="ion-android-checkmark-circle"></i>DİGİMAT Randa Elektronik şirketinin tescilli bir markasıdır.</li>
+              <li><i class="ion-android-checkmark-circle"></i> DİGİMAT ürünlerinin uzun süreler sorunsuz çalışmasının sebebi Randa Elektironik şirketinin bir ARGE şirketi olmasından kaynaklanmaktadır. </li>
+              <li><i class="ion-android-checkmark-circle"></i> Dünyanın bir çok ülkesinden gelen Feedback'ler ile ürünlerimizi kusursuz ve yenilikci yapmak için çalışmaktayız. </li>
+            </ul>
+
+          </div>
+        </div>
+
+      </div>
+
+
+    </section>
+
+    ============================-->
+
+
+
+                  </div>
+
+
+
+<!-- Trigger/Open The Modal -->
+
+<!-- The Modal -->
+<div id="myModal" class="modal" >
+
+  <!-- Modal content -->
+  <div class="modal-content" style="width: 70%;height: 80%;overflow-y: scroll"> 
+    <span class="close">&times;</span>
+<img style="margin-left: auto;
+  margin-right: auto;" class="img-fluid" src="kiosk10.png" alt="..." />  
+  <div style="padding-left: 10%;padding-right: 10%;"> 
+  <p style="text-align: center;">Kiosk Bilet Makinesi
+</p>   
+    <p style="text-align: justify;">Müşterinin sıra almasını sağlayan, dokunmatik ekrana ve Windows işletim sistemine sahip bilet makinesidir. Diğer özellikler: • 18,5 inç dikey dokunmatik ekran, • Sınırsız alt menü, • Yapılan işlemlerin raporlanabilmesi, • 58 mm kadar otomatik kesicili termal printer, • Bilgi mesajı ve karşılama ekranı seçenekleri, • 1,5 mm elektrostatik boyalı paslanmaz saç gövde. • Opsiyonel olarak; LCD ana göstergede resim veya video oynatabilme imkanlarına sahiptir.</p>   
+  
 
 
 
 
 
 
+</div>
+  </div>
 
 
+                    </div>  <!-- mymodal modal 1  -->
+
+<div id="myModal2" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content" style="width: 70%;height: 80%;overflow-y: scroll">
+    <span class="close2">&times;</span>
+   <img style="margin-left: auto;
+  margin-right: auto;" class="img-fluid" src="kiosk11.jpg" alt="..." />  
+    <div style="padding-left: 10%;padding-right: 10%;"> 
+
+  <p style="text-align: center;">Dot-Matrix LED Ana Gösterge
+
+</p>  
+    <p style="text-align: justify;">Dot-Matrix LED ana gösterge, bekleme alanlarına asılır. Bilet numarasını, müşterinin gitmesi gereken banko numarasını ve o bankonun yönüne işaret eden oku gösterir. Müşteri, bilet numarasını gördüğünde, bankoyu bulmak için ok yönüne göre hareket eder ve işlemine devam eder. Diğer özellikler: • Her satırda 10×40 nokta çözünürlüktedir. • Kırmızı renktedir. • Sıra numarasını ve çağıran banko numarasını yön okları ile birlikte gösterir. • Bilgi mesajı gösterebilir. • 10 satıra kadar gösterebilir. • Rakam boyu 76 mm’dir.</p>  
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+  
 
 
 
   </div>
+  </div>
+
+</div>
+
+
+
+<div id="myModal3" class="modal" style="">
+
+  <!-- Modal content -->
+  <div class="modal-content" style="width: 70%;height: 80%;overflow-y: scroll">
+    <span class="close3">&times;</span>
+                        <!-- Portfolio item 1-->
+                  <img style="margin-left: auto;
+  margin-right: auto;" class="img-fluid" src="kiosk12.jpg" alt="..." />  
+<div style="padding-left: 10%;padding-right: 10%;"> 
+
+  <p style="text-align: center;">Dot-Matrix LED Lokal Göstergesi
+
+
+</p>  
+    <p style="text-align: justify;">Dot-Matrix LED lokal gösterge, her bankoya asılabilir. Bilet ve banko numaralarını gösterir. Diğer özellikler: • 10x40 nokta çözünürlüktedir. • Kırmızı renktedir. • 3 veya 4 haneli gösterge kapasitesi. • Bilgi mesajı gösterebilir. • Rakam boyu 76 mm’dir. • Boyutlar 360 x 130 mm’dir.</p>  
+
+
+  
+
+
+
+
+  </div>  </div>
+  </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<div id="myModal4" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content" style="width: 70%;height: 80%;overflow-y: scroll">
+    <span class="close4">&times;</span>
+   <img style="margin-left: auto;
+  margin-right: auto;" class="img-fluid" src="kiosk13.jpg" alt="..." />  
+<div style="padding-left: 10%;padding-right: 10%;"> 
+
+  <p style="text-align: center;">Çağrı Terminali
+
+
+</p>  
+    <p style="text-align: justify;">Yetkili personelin bekleyen bilet numarasını çağırmasını sağlayan ünitedir. Diğer özellikler: • Sırada bekleyen bilet numarasını bankoya çağırmak için kullanılır. • Bekleyen kişi sayısı ekranında görülür. • İşlemi başka bankoya transfer edebilir. • Şifre girilerek kişiye özel çalışabilir. • Sanal terminal yazılımı ile paralel çalışabilir.</p>  
+
+
+  
+
+
+
+  </div>   </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<div id="myModal5" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content" style="width: 70%;height: 80%;overflow-y: scroll">
+    <span class="close5">&times;</span>
+   <img style="margin-left: auto;
+  margin-right: auto;" class="img-fluid" src="kiosk14.png" alt="..." />  
+<div style="padding-left: 10%;padding-right: 10%;"> 
+
+  <p style="text-align: center;">Gong
+
+</p>  
+    <p style="text-align: justify;">Bankolardan yeni bir sıra çağrısı yapıldığını bildirmek için kullanılan sesli uyarı ünitesidir.
+
+
+</p>  
+
+
+  
+
+
+
+  </div>  
 </div>
 
 </div>
+
+
+
+
+
+
+
+
+
+
+
+<div id="myModal6" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content" style="width: 70%;height: 80%;overflow-y: scroll">
+    <span class="close6">&times;</span>
+  <img style="margin-left: auto;
+  margin-right: auto;" class="img-fluid" src="kiosk15.jpg" alt="..." />  
+<div style="padding-left: 10%;padding-right: 10%;"> 
+
+  <p style="text-align: center;">Rulo Kağıt
+
+
+</p>  
+    <p style="text-align: justify;">Piyasadan da rahatlıkla temin edilebilecek, termal ısıtma yöntemi ile çalışan sıramatik yazıcılarında kullanılan bilet kağıdıdır.
+
+</p>  
+
+
+ 
+
+
+
+
+  </div>  </div>
+  </div>
+<div id="myModal7" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content" style="width: 70%;height: 80%;overflow-y: scroll">
+    <span class="close7">&times;</span>
+  <img style="margin-left: auto;
+  margin-right: auto;" class="img-fluid" src="kiosk16.jpg" alt="..." />  
+<div style="padding-left: 10%;padding-right: 10%;"> 
+
+  <p style="text-align: center;">Güç Kaynağı
+
+
+
+
+</p>  
+    <p style="text-align: justify;">12V/5A güç kaynağıdır. Her 4 bankoda 1 adet güç kaynağı kullanılması önerilir.
+
+
+
+</p>  
+
+
+ 
+
+
+
+
+  </div>  </div>
+
+
+</div>
+
+<script>
+
+
+var xmodal = document.getElementsByClassName("modal");
+
+
+// Get the modal
+var modal = document.getElementById("myModal");
+var modal2 = document.getElementById("myModal2");
+var modal3= document.getElementById("myModal3");
+var modal4 = document.getElementById("myModal4");
+var modal5 = document.getElementById("myModal5");
+var modal6 = document.getElementById("myModal6");
+var modal7 = document.getElementById("myModal7");
+
+
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+var btn2 = document.getElementById("myBtn2");
+var btn3 = document.getElementById("myBtn3");
+var btn4 = document.getElementById("myBtn4");
+var btn5 = document.getElementById("myBtn5");
+var btn6 = document.getElementById("myBtn6");
+var btn7 = document.getElementById("myBtn7");
+
+
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+var span2 = document.getElementsByClassName("close2")[0];
+var span3 = document.getElementsByClassName("close3")[0];
+var span4 = document.getElementsByClassName("close4")[0];
+var span5 = document.getElementsByClassName("close5")[0];
+var span6 = document.getElementsByClassName("close6")[0];
+var span7 = document.getElementsByClassName("close7")[0];
+
+
+// When the user clicks the button, open the modal 
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+btn2.onclick = function() {
+  modal2.style.display = "block";
+}
+btn3.onclick = function() {
+  modal3.style.display = "block";
+
+}
+btn4.onclick = function() {
+  modal4.style.display = "block";
+}
+btn5.onclick = function() {
+  modal5.style.display = "block";
+}
+btn6.onclick = function() {
+  modal6.style.display = "block";
+}
+btn7.onclick = function() {
+  modal7.style.display = "block";
+}
+
+
+
+// When the user clicks on <span> (x), close the modal
+span2.onclick = function() {
+  modal2.style.display = "none";
+}
+span.onclick = function() {
+  modal.style.display = "none";
+}
+span3.onclick = function() {
+  modal3.style.display = "none";
+}
+span4.onclick = function() {
+  modal4.style.display = "none";
+}
+span5.onclick = function() {
+  modal5.style.display = "none";
+}
+span6.onclick = function() {
+  modal6.style.display = "none";
+}
+span7.onclick = function() {
+  modal7.style.display = "none";
+}
+
+
+// When the user clicks anywhere outside of the modal, close it
+
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }else if (event.target == modal2){
+    modal2.style.display = "none";
+
+  }else if (event.target == modal3){
+    modal3.style.display = "none";
+
+  }else if (event.target == modal4){
+    modal4.style.display = "none";
+
+  }else if (event.target == modal5){
+    modal5.style.display = "none";
+
+  }else if (event.target == modal6){
+    modal6.style.display = "none";
+
+  }else if (event.target == modal7){
+    modal7.style.display = "none";
+
+  }
+}
+</script>
+
+
 
    
-
-
   <footer id="footer">
     <div class="container">
       <div class="copyright">
@@ -581,7 +816,7 @@ Kuyruk yönetimi alanındaki uzun yıllara dayanan deneyimimiz çok işlevli sis
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD8HeI8o-c1NppZA-92oYlXakhDPYR7XMY"></script>
   <!-- Contact Form JavaScript File -->
   <script src="contactform/contactform.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
   <!-- Template Main Javascript File -->
   <script src="js/main.js"></script>
 
